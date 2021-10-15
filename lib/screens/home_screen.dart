@@ -4,6 +4,7 @@ import 'package:cafe_ui_test1/screens/order_page/order_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import '../intercept_page.dart';
 import 'components/bottom_nav_bar.dart';
 import 'components/product_list.dart';
 
@@ -70,7 +71,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 itemBuilder: (context, index) => ProductList(
                   product: products[index],
                   onPress: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => OrderPage(product: products[index])));
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => InterceptPage(product: products[index])));
                   },
                   ),
             ),
